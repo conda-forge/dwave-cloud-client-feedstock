@@ -33,7 +33,7 @@ requirements:
     # From requests[socks]
     - PySocks >=1.5.6,!=1.5.7
   run_constrained:
-    - dimod >=0.10.5,<0.11,!=0.10.0,!=0.10.1,!=0.10.2,!=0.10.3,!=0.10.4
+    - dimod >=0.10.5,<0.13,!=0.10.0,!=0.10.1,!=0.10.2,!=0.10.3,!=0.10.4
     - numpy >=1.16
     - dwave-networkx >=0.8.9
 
