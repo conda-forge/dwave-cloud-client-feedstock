@@ -19,7 +19,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - click >=7.0
     - dataclasses
@@ -27,7 +27,7 @@ requirements:
     - homebase >=1.0
     - plucky >=0.4.3
     - pydantic >=1.7.3
-    - python >=3.6
+    - python >=3.7
     - python-dateutil >=2.7
     - requests >=2.18
     # From requests[socks]
