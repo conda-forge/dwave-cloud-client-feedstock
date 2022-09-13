@@ -1,5 +1,5 @@
 {% set name = "dwave-cloud-client" %}
-{% set version = "0.10.1" %}
+{% set version = "0.10.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dwave-cloud-client-{{ version }}.tar.gz
-  sha256: e69e33cfc3f6bb2f02daad0a3daa207e5348bf0355b01b5257da7b10549cf3e1
+  sha256: 956e26ea932c05f392f19b974abba74aba9e0d2d8f93c921dbeefde5ca569808
 
 build:
   entry_points:
