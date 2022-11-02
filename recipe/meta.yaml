@@ -45,6 +45,7 @@ test:
     - dwave --help
   requires:
     - pip
+    - numpy
 
 about:
   home: https://github.com/dwavesystems/dwave-cloud-client
