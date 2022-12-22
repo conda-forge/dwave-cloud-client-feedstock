@@ -1,5 +1,5 @@
 {% set name = "dwave-cloud-client" %}
-{% set version = "0.10.3" %}
+{% set version = "0.10.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dwave-cloud-client-{{ version }}.tar.gz
-  sha256: d82fbd1ce033c17a88b7cf738ac5097951a359f0eaabe11d5a570066aedd1cae
+  sha256: 3288f395eaa34bb0873ad08cbe1653acba960791487ae58d5f7ef3830e7f131b
 
 build:
   entry_points:
@@ -33,8 +33,8 @@ requirements:
     # From requests[socks]
     - PySocks >=1.5.6,!=1.5.7
   run_constrained:
-    - dimod >=0.10.5,<0.13,!=0.10.0,!=0.10.1,!=0.10.2,!=0.10.3,!=0.10.4
-    - numpy >=1.16
+    - dimod >=0.10.5,<0.13,!=0.11.4
+    - numpy >=1.17.3
     - dwave-networkx >=0.8.9
 
 test:
