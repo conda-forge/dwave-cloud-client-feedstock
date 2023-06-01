@@ -1,11 +1,11 @@
-About dwave-cloud-client
-========================
+About dwave-cloud-client-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dwave-cloud-client-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/dwavesystems/dwave-cloud-client
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dwave-cloud-client-feedstock/blob/main/LICENSE.txt)
 
 Summary: A minimal client for interacting with D-Wave cloud resources.
 

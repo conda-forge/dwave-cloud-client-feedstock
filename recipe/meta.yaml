@@ -1,5 +1,5 @@
 {% set name = "dwave-cloud-client" %}
-{% set version = "0.10.4" %}
+{% set version = "0.10.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dwave-cloud-client-{{ version }}.tar.gz
-  sha256: 3288f395eaa34bb0873ad08cbe1653acba960791487ae58d5f7ef3830e7f131b
+  sha256: cde93a4e70da6fe4147ffcb29b1cd05302ed374901c98f0fdcff5ab8a94d4229
 
 build:
   entry_points:
@@ -21,6 +21,8 @@ requirements:
     - pip
     - python >=3.7
   run:
+    - packaging >=19
+    - werkzeug >=2.2
     - click >=7.0
     - dataclasses
     - diskcache >=5.2.1
