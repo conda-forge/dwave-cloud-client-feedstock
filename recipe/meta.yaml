@@ -19,7 +19,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
     - authlib >=1.2,<2
     - typing-extensions >=4.5.0
@@ -31,7 +31,7 @@ requirements:
     - homebase >=1.0
     - plucky >=0.4.3
     - pydantic >=2,<3
-    - python >=3.7
+    - python >=3.8
     - python-dateutil >=2.7
     - requests >=2.18
     # From requests[socks]
