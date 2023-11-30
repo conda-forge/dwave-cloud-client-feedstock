@@ -1,5 +1,5 @@
 {% set name = "dwave-cloud-client" %}
-{% set version = "0.11.1" %}
+{% set version = "0.11.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dwave-cloud-client-{{ version }}.tar.gz
-  sha256: cad73cac2a49e9d448f2b4143b8829d3596c3f394e4f24fa0895622f089ec2b2
+  sha256: 82d2ae833674d521f0afac41ab75250c9bf08b15542949b64ec96cede94111c4
 
 build:
   entry_points:
@@ -21,6 +21,7 @@ requirements:
     - pip
     - python >=3.8
   run:
+    - importlib-metadata >=5.0.0
     - authlib >=1.2,<2
     - typing-extensions >=4.5.0
     - packaging >=19
