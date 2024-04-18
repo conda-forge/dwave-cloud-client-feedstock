@@ -1,5 +1,5 @@
 {% set name = "dwave-cloud-client" %}
-{% set version = "0.11.3" %}
+{% set version = "0.11.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dwave-cloud-client-{{ version }}.tar.gz
-  sha256: 9ee1ffd5a31d0a27e57c8d5a0512bde147cb0e634c96243bfb730a48d2b9812c
+  sha256: a3698b0f861bab2b9979bf58db4f6a7bd864a9b2ec946d7f4ccd3baca49642e4
 
 build:
   entry_points:
@@ -21,20 +21,21 @@ requirements:
     - pip
     - python >=3.8
   run:
+    - urllib3 >=1.26,<3
     - importlib-metadata >=5.0.0
     - authlib >=1.2,<2
-    - typing-extensions >=4.5.0
+    - typing-extensions >=4.5.0,<5
     - packaging >=19
-    - werkzeug >=2.2
-    - click >=7.0
+    - werkzeug >=2.2,<4
+    - click >=7.0,<9
     - dataclasses
-    - diskcache >=5.2.1
-    - homebase >=1.0
-    - plucky >=0.4.3
+    - diskcache >=5.2.1,<6
+    - homebase >=1.0,<2
+    - plucky >=0.4.3,<0.5
     - pydantic >=2,<3
     - python >=3.8
-    - python-dateutil >=2.7
-    - requests >=2.18
+    - python-dateutil >=2.7,<3
+    - requests >=2.25,<3
     # From requests[socks]
     - PySocks >=1.5.6,!=1.5.7
   run_constrained:
