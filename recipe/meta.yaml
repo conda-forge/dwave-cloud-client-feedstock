@@ -20,6 +20,8 @@ requirements:
   host:
     - pip
     - python >=3.8
+    - setuptools >=46.4.0
+    - wheel
   run:
     - orjson >=3.10
     - urllib3 >=1.26,<3
@@ -29,7 +31,6 @@ requirements:
     - packaging >=19
     - werkzeug >=2.2,<4
     - click >=7.0,<9
-    - dataclasses
     - diskcache >=5.2.1,<6
     - homebase >=1.0,<2
     - plucky >=0.4.3,<0.5
@@ -39,10 +40,6 @@ requirements:
     - requests >=2.25,<3
     # From requests[socks]
     - PySocks >=1.5.6,!=1.5.7
-  run_constrained:
-    - dimod >=0.10.5,<0.13,!=0.11.4
-    - numpy >=1.17.3
-    - dwave-networkx >=0.8.9
 
 test:
   imports:
