@@ -1,5 +1,5 @@
 {% set name = "dwave-cloud-client" %}
-{% set version = "0.13.6" %}
+{% set version = "0.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 7195447115abad2eb3d7b6c322e49d2ba15cbb21d8c530698f80acfacbafa47c
+  sha256: 936bbb373b3a6ccedad96b3b5e706e884d59183731b7ad7ee8d6e9ee7ece5c80
 
 build:
   entry_points:
@@ -23,6 +23,7 @@ requirements:
     - setuptools >=46.4.0
     - wheel
   run:
+    - http-sf >=1.0.4
     - typing_extensions >=4.5.0,<5
     - orjson >=3.10
     - urllib3 >=1.26,<3
